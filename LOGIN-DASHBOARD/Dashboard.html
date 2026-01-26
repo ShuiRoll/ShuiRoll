@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style> 
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #cdcdcd;
+        margin: 0;
+        padding: 0;
+    }
+    .dashboard-container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #6c3baa;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .logout-link {
+        text-decoration: none;
+        color: #f02330;
+        font-weight: bold;
+    }
+    .logout-link:hover {
+        text-decoration: underline;
+        color: #9b1c43;
+    }
+    .content h3 {
+        color: #000000;
+        border-left: 5px solid #6c3baa;
+        padding-left: 10px;
+    }
+    .student-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .student-table th, .student-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .student-table th {
+        background-color: #7851a9;
+        color: white;
+    }
+    </style>
+
+    <div class="dashboard-container">
+        <header>
+            <h1>Welcome, Administrator</h1>
+            <a href="login.html" class="logout-link">Logout</a>
+        </header>
+
+        <section class="content">
+            <h3>Student Records</h3>
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ceballos, Cristian Niel</td>
+                        <td>cristian.ceballos@gmail.com</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Galon, Claudee</td>
+                        <td>claudee.galon@gmail.com</td>
+                        <td>Information Technology</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Reloba, Joen</td>
+                        <td>joen.reloba@gmail.com</td>
+                        <td>Multimedia Arts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
